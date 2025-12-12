@@ -181,3 +181,33 @@ a:hover {
   color: #705749;
   font-size: 0.95rem;
 }
+
+.nav-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 2rem 0 3rem;
+}
+
+.hobby-btn {
+  display: inline-block;
+  padding: 0.85rem 2.4rem;
+  border-radius: 999px;
+  background: #fdf0dd;              /* light sand */
+  color: #3a251c;                   /* dark canyon brown */
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(58, 37, 28, 0.25);
+  border: 2px solid #e3b78f;
+  transition: transform 0.12s ease,
+              box-shadow 0.12s ease,
+              background 0.12s ease;
+}
+
+.hobby-btn:hover {
+  background: #f5d2a5;
+  box-shadow: 0 12px 26px rgba(58, 37, 28, 0.3);
+  transform: translateY(-2px);
+}
