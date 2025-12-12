@@ -3235,7 +3235,7 @@ textarea.form-control-lg {
   --bs-dropdown-link-hover-color: #1e2125;
   --bs-dropdown-link-hover-bg: #e9ecef;
   --bs-dropdown-link-active-color: #fff;
-  --bs-dropdown-link-active-bg: #1abc9c;
+  --bs-dropdown-link-active-bg: rgba(15, 23, 42, 0.07);
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-item-padding-x: 1rem;
   --bs-dropdown-item-padding-y: 0.25rem;
@@ -11043,4 +11043,70 @@ html {
 
 .copyright {
   background-color: #1a252f;
+}
+
+/* === Boman custom theme overrides === */
+:root {
+  /* Brand colors from your swatches */
+  --cream: #EBDFD0;
+  --slate: #6D7B8C;
+
+  /* Override Bootstrap theme variables */
+  --bs-primary: var(--slate);
+  --bs-secondary: var(--slate);
+  --bs-body-bg: var(--cream);
+  --bs-link-color: var(--slate);
+  --bs-link-hover-color: #5a6677;
+}
+
+/* Base font + background */
+body {
+  background-color: var(--cream);
+  color: #1f2933;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* Navbar (keep links white for contrast) */
+#mainNav {
+  background-color: var(--slate) !important;
+}
+
+#mainNav .navbar-brand,
+#mainNav .nav-link {
+  color: #ffffff !important;
+}
+
+/* Masthead / hero section */
+header.masthead {
+  background-color: var(--cream) !important;
+  color: #1f2933;
+}
+
+header.masthead .masthead-heading {
+  color: #1f2933;
+}
+
+header.masthead .masthead-subheading {
+  color: #374151;
+}
+
+/* Divider star + lines */
+.divider-custom .divider-custom-line {
+  background-color: var(--slate);
+}
+
+.divider-custom .divider-custom-icon {
+  color: var(--slate);
+}
+
+/* Primary buttons, etc. */
+.btn-primary {
+  background-color: var(--slate);
+  border-color: var(--slate);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #5a6677;
+  border-color: #5a6677;
 }

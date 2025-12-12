@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Boman Johnson – Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #f3f4f6;
+      --card-bg: #ffffff;
+      --primary: #1f2937;
+      --accent: #2563eb;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--primary);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+      border: 1px solid var(--border);
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.25rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .name {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .contact {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .contact span + span::before {
+      content: "•";
+      margin: 0 0.45rem;
+      color: var(--border);
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      margin-bottom: 1.6rem;
+    }
+
+    .section-title {
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.4rem;
+      margin-bottom: 0.85rem;
+      font-weight: 600;
+    }
+
+    .edu-heading,
+    .entry-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+    }
+
+    .edu-left,
+    .entry-left {
+      font-weight: 600;
+    }
+
+    .edu-right,
+    .entry-right {
+      font-size: 0.9rem;
+      color: var(--muted);
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .subline {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-top: 0.2rem;
+    }
+
+    ul {
+      margin-top: 0.4rem;
+      margin-left: 1.2rem;
+      list-style: disc;
+      font-size: 0.95rem;
+    }
+
+    ul li + li {
+      margin-top: 0.25rem;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 1.8rem;
+    }
+
+    .pill-list {
+      list-style: none;
+      margin-left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.4rem;
+    }
+
+    .pill-list li {
+      padding: 0.18rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      font-size: 0.8rem;
+      color: var(--muted);
+      background: #f9fafb;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 1rem;
+      font-size: 0.85rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        padding: 1.75rem 1.25rem;
+      }
+
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+
+      .edu-heading,
+      .entry-heading {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .edu-right,
+      .entry-right {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- optional link back to main template -->
+    <a href="index.html" class="back-link">← Back to main site</a>
+
+    <header>
+      <div class="name">Boman M. Johnson</div>
+      <div class="contact">
+        <span>1175 Ash Ave, Provo, UT 84604</span>
+        <span><a href="tel:+14353130595">(435) 313-0595</a></span>
+        <span><a href="mailto:bj0303@byu.edu">bj0303@byu.edu</a></span>
+      </div>
+    </header>
+
+    <!-- EDUCATION -->
+    <section class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="edu-heading">
+        <div class="edu-left">Brigham Young University</div>
+        <div class="edu-right">Provo, UT</div>
+      </div>
+      <div class="subline">Bachelor of Science in Finance &nbsp;|&nbsp; Aug 2023 – Apr 2027</div>
+      <ul>
+        <li>GPA 3.56 / 4.00</li>
+        <li>Talents Awards 2D Scholarship – Fine Arts, Merit-Based</li>
+        <li>Martha S. Jensen / Art Scholarship – Fine Arts, Merit-Based</li>
+        <li>Active member of the BYU Finance Society and BYU Real Estate Association</li>
+      </ul>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="entry">
+        <div class="entry-heading">
+          <div class="entry-left">Lodging Dynamics – Acquisitions Analyst Intern</div>
+          <div class="entry-right">Provo, UT &nbsp;|&nbsp; Sep 2025 – Present</div>
+        </div>
+        <ul>
+          <li>Utilize key metrics such as ADR, RevPAR, and occupancy in market research and presentation to management.</li>
+          <li>Communicate with brokers and gather information on properties, comps, and the sub-market to help drive analysis.</li>
+          <li>Identify strategic plays regarding value-add, hotel branding, management takeovers, and new markets to pursue.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-heading">
+          <div class="entry-left">Fox Pest Control – Sales Representative</div>
+          <div class="entry-right">Albany, NY &amp; South Bend, IN &nbsp;|&nbsp; May – Aug 2024, May – Aug 2025</div>
+        </div>
+        <ul>
+          <li>Recruited sales representatives and assisted in management of 30+ team members over the course of the summers.</li>
+          <li>Produced revenues of $324,880 for the branches while maintaining high customer satisfaction throughout the year.</li>
+          <li>Utilized communication techniques to overcome objections, build rapport, and articulate service value to customers.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-heading">
+          <div class="entry-left">Tablerock Capital – Acquisitions Analyst Intern</div>
+          <div class="entry-right">Provo, UT &nbsp;|&nbsp; Jan 2025 – May 2025</div>
+        </div>
+        <ul>
+          <li>Assisted with due diligence and market analysis, and underwrote over $510M in multifamily value-add deals.</li>
+          <li>Considered proximity to demand drivers, area growth trends, and comparable properties’ current performances.</li>
+          <li>Deciphered strategic value-add projects that would boost cash flows and increase property value upon exit.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-heading">
+          <div class="entry-left">Councyl Capital – On Campus Internship, Acquisitions Analyst Intern</div>
+          <div class="entry-right">Provo, UT &nbsp;|&nbsp; Jan 2025 – Apr 2025</div>
+        </div>
+        <ul>
+          <li>Underwrote and presented potential manufactured housing investments with a target cash-on-cash return of 20%.</li>
+          <li>Sourced mid-size regional banks and researched crowdfunding platforms for portfolio companies.</li>
+          <li>Collaborated with a team to source manufactured housing communities, contact ownership, and work with cities.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- VOLUNTEER -->
+    <section class="section">
+      <h2 class="section-title">Volunteer Service</h2>
+
+      <div class="entry">
+        <div class="entry-heading">
+          <div class="entry-left">The Church of Jesus Christ of Latter-day Saints – Volunteer Representative</div>
+          <div class="entry-right">Los Angeles, CA &amp; Bangkok, TH &nbsp;|&nbsp; Jul 2021 – Jul 2023</div>
+        </div>
+        <ul>
+          <li>Coordinated, taught, and conducted regular meetings countrywide with groups of 8–50 missionaries and leaders.</li>
+          <li>Planned activities and meetings each day to maximize time and effectiveness in helping others.</li>
+          <li>Interacted with people in the streets and their homes while learning their languages to better communicate.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-heading">
+          <div class="entry-left">Big Brothers of America – Mentor</div>
+          <div class="entry-right">St. George, UT &nbsp;|&nbsp; Jan 2021 – Jun 2021</div>
+        </div>
+        <ul>
+          <li>Facilitated engaging and uplifting activities for 8–12 youth designed to enhance their confidence and self-worth.</li>
+          <li>Mentored and befriended 8–12 elementary students facing a spectrum of challenging at-home circumstances.</li>
+          <li>Mediated relationships between youth to promote positive feelings, communication, and avoid arguments.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- AWARDS / SKILLS / INTERESTS -->
+    <section class="section">
+      <h2 class="section-title">Awards, Skills &amp; Interests</h2>
+
+      <ul>
+        <li>Bridge Case Competition Finalist – Underwrote and presented a $50.5M multifamily property in Millcreek, UT.</li>
+        <li>BREA One-Day Case Competition – Tasked with underwriting and analyzing a $150M multifamily value-add deal.</li>
+        <li>1st Place, National NCECA Pottery and Ceramics Exhibition; 2nd Place, Utah Sterling Scholar – Fine Arts.</li>
+        <li>Enjoy backpacking and camping with my wife and friends in local mountains and extreme sledding during winters.</li>
+        <li>Top finisher in competitive mountain biking and rock climbing; avid skier; slackline and skimboard hobbyist.</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>

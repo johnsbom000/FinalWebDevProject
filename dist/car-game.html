@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <title>Car Game</title>
+  <!-- Reuse your Bootstrap theme styles if you want consistent font/colors -->
+  <link href="css/styles.css" rel="stylesheet" />
+
+  <!-- Simple page-specific centering styles -->
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: #0b1120;
+      color: #e5e7eb;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+
+    .game-page-wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    .game-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    canvas {
+      border-radius: 12px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+      background: #111827;
+    }
+
+    .back-link {
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      color: #e5e7eb;
+      font-size: 0.85rem;
+      text-decoration: none;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+    }
+
+    .back-link:hover {
+      text-decoration: none;
+      background: rgba(30, 64, 175, 0.95);
+    }
+  </style>
+</head>
+<body>
+  <!-- Optional: quick link back to main page -->
+  <a href="index.html" class="back-link">← Back to Home</a>
+
+  <div class="game-page-wrapper">
+    <h1>Car Game</h1>
+    <div class="game-container">
+      <!-- Make sure the ID matches what game.js expects -->
+      <canvas id="gameCanvas" width="800" height="600"></canvas>
+    </div>
+  </div>
+
+  <!-- Your game logic -->
+  <script src="js/game.js"></script>
+</body>
+</html>
